@@ -38,7 +38,44 @@ $function = require_once('../functions.php');
 
     <div class="pages">
       <h2>Pages</h2>
-      
+      <div id="resultSavePages">
+        <!-- Print result -->
+      </div>
+      <form id="saveDataPages" action="">
+        title<br/>
+        <input type="text" name="title_page" value=""><br/>
+        content<br/>
+        <input type="text" name="content_page" value=""><br/>
+        contact<br/>
+        <input type="checkbox" name="contact_page" value="yes"><br/>
+        <input type="hidden" name="url_page" value=""><br />
+        <input type="hidden" name="save_page" value="true"><br />
+        <input type="submit" name="" value="Guardar">
+      </form>
+      <hr>
+    </div>
+
+    <div class="menu">
+      <h2>Menu</h2>
+      <div id="resultSaveMenu">
+
+      </div>
+      <form id="saveMenu">
+        nombre<br/>
+        <input type="text" name="nombre" value=""><br/>
+        posición<br/>
+        <input type="text" name="position" value=""><br/>
+        url (solo si es un enlace externo)<br/>
+        <input type="text" name="url" value=""><br/>
+        <!-- pages -->
+        linkear directamente a una página
+        <div id="selectPagesForm">
+          <!-- load options pages -->
+        </div>
+        <input type="hidden" name="save_menu" value="true">
+        <input type="submit" name="" value="Guardar">
+      </form>
+
     </div>
 
     <script src="../libs/jquery-3.2.1.min.js" charset="utf-8"></script>
